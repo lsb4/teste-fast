@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sideMenu {
+    height: 100vh;
+    width: 250px;
+    background-color: #434A54;
+    text-align: center;
+}
+
+.menuButton {
+    width: 85%;
+}
+
+.logo {
+    height: 70px;
+    background-color: rgb(196, 196, 196);
+}
+
+.menuButton {
+    margin: 20px 0;
+}
+
+.optionList {
+    padding: 0 0 0 17px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    color: rgb(196, 196, 196);
+}
+
+.configs {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.flowupButton {
+    width: 100%;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .sideMenu {
+        display: none;
+    }
+}

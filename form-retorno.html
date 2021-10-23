@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menu/menu.css">
+    <link rel="stylesheet" href="./form-retorno/form-retorno.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="sideMenu">
+        <div class="logo"></div>
+        <button type="button" class="btn btn-primary menuButton">Tutorial - Passo 4/5</button>
+        <ul class="optionList">
+            <li>Opção 1</li>
+            <li>Opção 2</li>
+            <li>Opção 3</li>
+            <li>Opção 4</li>
+            <li>Opção 5</li>
+            <li>Opção 6</li>
+            <li>Opção 7</li>
+            <li>Opção 8</li>
+        </ul>
+        <ul class="optionList configs">
+            <li>Opção 1</li>
+            <li>Opção 2</li>
+        </ul>
+        <button type="button" class="btn btn-success flowupButton">Success</button>
+        <button type="button" class="btn btn-danger flowupButton" >Danger</button>
+    </div>
+    <div class="main">
+        <div class="top">
+            <h3>Configuração de <strong>Convênios</strong></h3>
+            <p>Aqui você irá configurar os convênios bancários para emitir boletos bancários.</p>
+        </div>
+        <div class="phases">
+            <div class="phase" id="past">
+                <h1>1</h1>
+                <p>Início</p>
+            </div>
+            <div class="phase" id="past">
+                <h1>2</h1>
+                <p>Dados</p>
+            </div>
+            <div class="phase" id="past">
+                <h1>3</h1>
+                <p>Boleto</p>
+            </div>
+            <div class="phase" id="this">
+                <h1>4</h1>
+                <p>Retorno</p>
+            </div>
+            <div class="phase">
+                <h1>5</h1>
+                <p>Fim</p>
+            </div>
+        </div>
+        <div class="boleto" id="boleto"> 
+            <p>Arquivo de Retorno: <span>(Esse arquivo você deve solicitar ao seu gerente)</span></p>
+            <div class="bar"></div>
+            <div class="content" id="upload">
+                <img src="./assets/retorno.png" alt="Imagem Ilustrativa">
+                <input type="file" id="arq" name="filename" hidden>
+                <label id="uploadArq" for="arq">ARQUIVO DE RETORNO</label>
+                <span id="jump">(Essa etapa pode ser pulada)</span>
+            </div>
+            <div class="content" id="boletoOk" style="display: none;">
+                <img src="./assets/retornoOk.png" alt="Imagem Ilustrativa">
+                <p class="boletoOkText">ESTÁ TUDO <span>CERTO</span></p>
+                <p class="boletoOkText">IDENTIFICAMOS O BOLETO TESTE GERADO</p>
+            </div>
+            <div class="content" id="boletoFail" style="display: none;">
+                <img src="./assets/retornoFail.png" alt="Imagem Ilustrativa">
+                <p class="boletoFailText">ALGO DEU <span>ERRADO</span></p>
+                <p class="boletoFailText">NÃO IDENTIFICAMOS O BOLETO TESTE GERADO</p>
+                <div class="buttonArea">
+                    <a id="changeArq" href="#">Alterar Arquivo</a>
+                    <a id="editConv" href="./form-bancos.html">Editar Convênio?</a>
+                </div>
+            </div>
+            <a id="prox" href="./form-retorno.html">PRÓXIMO</a>
+            <a id="end" href="./form-fim.html" style="display: none;">PRÓXIMO</a>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./form-retorno/form-retorno.js"></script>
+    <script src="./form-boleto/form-boleto.js"></script>
+
+</body>
+</html>
